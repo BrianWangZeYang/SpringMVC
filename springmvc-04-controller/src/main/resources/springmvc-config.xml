@@ -18,11 +18,11 @@
     <mvc:default-servlet-handler />
 -->
     <!--视图解析器:模板引擎 Thymeleaf Freemarber-->
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
-        &lt;!&ndash;前缀&ndash;&gt;
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <!--前缀-->
     <property name="prefix" value="/WEB-INF/jsp/"/>
-            &lt;!&ndash;后缀&ndash;&gt;
+            <!--后缀-->
     <property name="suffix" value=".jsp"/>
             </bean>
-    <bean name="/t1" class="com.kuang.controller.ControllerTest1"/>-->
+    <bean name="/t1" class="com.kuang.controller.ControllerTest1"/>
     </beans>
