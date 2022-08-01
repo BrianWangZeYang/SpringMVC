@@ -1,0 +1,30 @@
+#、对象化思想：jquery，html，controller，json，ajax
+#、对象间的关系：ajax（jquery里面的ajax）
+
+1、23.42下载jquery，下载development开发版的就是源生的
+2、在web目录下创建一个用于存放静态文件的文件夹并创建js子文件夹将jquery.3.4.1.js放进去。
+3、思考实际开放中如果要打成jar包那这些静态文件怎么处理，现阶段是打成war包放在tomcat上运行。
+4、配置静态资源过滤，不让静态资源走DispachatServlet
+5、在index页面设置一个输入框在失去焦点的时候，发起一个请求到后台。使用script代码块完成，使用post（ajax旗下的方法）方法(三个参数，参数的值用键值对)。
+6、注意点<script></script>标签必须成对出现不能自闭合
+7、在controller中创建一个用来处理失去焦点请求的方法（这个方法不在控制视图的跳转，而是只为前端提供一个json参数，由前端ajax局部的更新页面）。
+8、post方法返回值有成功与失败两种情况，两种情况各对应一个函数，ajax只需要记住url，data，success，error，这四个参数
+
+第25集Ajax异步加载数据
+#、对象化思想 controller、实体类、list、jquery、es6
+   1、创建实体类User(name,age,sex)
+   2、创建一个controller ，用来给前端返回一些User数据
+   3、创建一个test2的jsp页面，为了使用ajax来接收数据并局部刷新
+   4、给输入框绑定单击事件，并使用post请求传递参数以获取相关数据
+   5、书写过程中多次使用console.log来进行数据获取连通测试
+   6、使用js动态的操作dom元素，动态的增加节点，创建html对象，并使用for循环遍历data数据并且拼接html，后再为id为content的tbody增加html节点
+   7、javaScript版本设置，使用ECMAScript6简称es6（其中var被let代替，let更安全使用范围更小）
+第26集Ajax验证用户名体验
+    1、创建一个用户名输入框一个密码输入框，并分别给其绑定失去焦点事件
+    2、在两个输入框后面添加一个提示框，当以上两个输入框合法时给出提示
+    3、在controller中创建一个a3方法，该方法对查询结果进行判断
+    4、在script代码块中两个焦点事件函数中分别调用post方法来请求数据接收数据，使用console.log来查看接收到的数据（记得添加"#"）
+    5、在配置文件中添加配置解决乱码问题
+    6、在script代码块中两个焦点事件函数中使用script对返回的结果进行判断，不同的结果对应不同的提示信息不同的提示信息颜色显示到提示框。
+第27集拦截器是什么
+    1、
